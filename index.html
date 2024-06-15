@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totaro : AI Artistry</title>
+    <title>Totaro - AI Artistry</title>
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+NL:wght@100..400&display=swap');
@@ -20,20 +20,19 @@
             overflow-x: hidden;
             /* animation: gradient 15s ease infinite;
             background: linear-gradient(45deg, #06C2D9, #FFFFFF, #06C2D9, #FFFFFF); */
+            /* background-size: 400% 400%; */
             background-image: 
                 radial-gradient(circle at 20% 20%, #FFD166 10%, transparent 30%),
                 radial-gradient(circle at 70% 80%, #EF476F 10%, transparent 30%),
                 radial-gradient(circle at 40% 60%, #06C2D9 10%, transparent 30%);
-            /* background-size: 400% 400%; */
-            /* background-size: 1000px 1000px; */
             position: relative;
         }
 
-       @keyframes gradient {
+       /* @keyframes gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
-        }
+        } */
 
         .nav {
             display: flex;
@@ -93,6 +92,7 @@
             position: relative;
             overflow: hidden;
             text-align: center;
+            border-bottom: #06C2D9 2px solid;
             
         }
 
@@ -144,11 +144,13 @@
             padding: 20px;
             flex: 1 1 calc(33.333% - 40px);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
         }
 
         .card img, .card video {
             max-width: 100%;
             height: auto;
+            border-radius: 5px;
         }
 
         .card h2 {
